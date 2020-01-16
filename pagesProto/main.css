@@ -3,14 +3,18 @@ body{
     margin: 0;
 }
 
-.container {
+.flexbox{
+    display: flex;
+}
+
+.container{
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
     justify-content: center;
     align-content: space-between;
     align-items: center;
-  }
+}
 
 .header{
     width: 100%;
@@ -27,6 +31,7 @@ body{
 }
 
 .navbar>a{
+    width: 300px;
     text-align: center;
     margin: auto;
     font-size: 20px;
@@ -38,4 +43,7 @@ body{
 .navbar>a:hover{
     color:black;
     cursor: pointer;
+}
+
+form{
 }
