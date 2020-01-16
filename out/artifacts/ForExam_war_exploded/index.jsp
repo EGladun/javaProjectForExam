@@ -11,11 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form action="first">
-    <button>
-
-    </button>
-  </form>
-
+  $END$
   </body>
 </html>
