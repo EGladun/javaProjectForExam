@@ -5,7 +5,7 @@
     <title>$Title$</title>
   </head>
   <body>
-  <form action="display" method="post">
+  <form action="donwload" method="get">
     <input type=submit value="поиск">
   </form>
   </body>
