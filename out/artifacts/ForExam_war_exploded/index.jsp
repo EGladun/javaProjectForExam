@@ -1,4 +1,4 @@
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -67,7 +67,7 @@
     cursor: pointer;
 }
 
-.submit{
+.download{
     width: 100px;
     height: 30px;
     color: whitesmoke;
@@ -76,7 +76,7 @@
     border-radius: 15px;
 }
 
-.submit:hover{
+.download:hover{
     background-color: black;
     color: whitesmoke;
 }

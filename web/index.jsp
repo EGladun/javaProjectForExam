@@ -68,7 +68,7 @@
 }
 
 .download{
-    width: 100px;
+    width: 150px;
     height: 30px;
     color: whitesmoke;
     background-color: grey;
