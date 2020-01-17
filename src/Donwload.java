@@ -10,7 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.rmi.server.ExportException;
 
-@WebServlet(urlPatterns = "/donwload",name = "Donwload")
+@WebServlet(urlPatterns = "/download",name = "Donwload")
 public class Donwload extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

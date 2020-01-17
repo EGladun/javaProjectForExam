@@ -1,6 +1,6 @@
 
-
-  <head>
+<html>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,7 +15,7 @@
         <a href="download.html">DOWNLOAD</a>
     </div>
     <form action="download" method="get">
-      <button class="download">Скачать файл</button>
+      <button class="download" type="submit">Скачать файл</button>
     </form>
 </body>
 <style>
@@ -95,3 +95,4 @@ form{
     align-items: center;
 }
 </style>
+</html>
