@@ -1,25 +1,34 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css" type="text/css">
-    <title>Download Page</title>
+    <title>Main Page</title>
 </head>
 <body>
-    <header class="header"></header>
-    <div class="navbar container">
-        <a href="main.jsp">HOME</a>
-        <a href="upload.html">UPLOAD</a>
-        <a href="index.jsp">DOWNLOAD</a>
-    </div>
-    <form action="download" method="get">
-      <button class="download" type="submit">Скачать файл</button>
-    </form>
+<header class="header"></header>
+<div class="navbar container">
+    <a href="main.jsp">HOME</a>
+    <a href="upload.html">UPLOAD</a>
+    <a href="index.jsp">DOWNLOAD</a>
+</div>
+<div class="container">
+    <ul class="content">
+        <li>Какая-то дичь</li>
+        <li>Не, ну рили</li>
+        <li>Что здесь происходит?</li>
+        <li>Ахахах</li>
+        <li>Помогите</li>
+    </ul>
+</div>
 </body>
+<script src="main.js"></script>
 <style>
-  body{
+    body{
     padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -67,8 +76,8 @@
     cursor: pointer;
 }
 
-.download{
-    width: 150px;
+.submit{
+    width: 100px;
     height: 30px;
     color: whitesmoke;
     background-color: grey;
@@ -76,7 +85,7 @@
     border-radius: 15px;
 }
 
-.download:hover{
+.submit:hover{
     background-color: black;
     color: whitesmoke;
 }
