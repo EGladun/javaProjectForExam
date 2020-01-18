@@ -11,7 +11,7 @@
     <header class="header"></header>
     <div class="navbar container">
         <a href="main.jsp">HOME</a>
-        <a href="upload.html">UPLOAD</a>
+        <a href="upload.jsp">UPLOAD</a>
         <a href="index.jsp">DOWNLOAD</a>
     </div>
     <form action="download" method="get">
