@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Upload Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 </head>
 <body>
 <header class="header"></header>
@@ -16,17 +17,17 @@
     <a href="upload.jsp">UPLOAD</a>
     <a href="index.jsp">DOWNLOAD</a>
 </div>
-<form method="post" class="upload_form container">
+<form name="uploader" enctype="multipart/form-data" method="post" class="upload_form container" id="drop-area">
     <div class="example-1">
         <div class="form-group">
             <label class="label">
                 <i class="material-icons">attach_file</i>
                 <span class="title">Добавить файл</span>
-                <input class="file" type="file">
+                <input name="userfile" class="file" type="file">
             </label>
         </div>
     </div>
-    <input class="submit" type="submit" value="Отправить">
+    <input class="submit" type="submit" name="submit" value="Отправить">
 </form>
 </body>
 <script src="upload.js"></script>
