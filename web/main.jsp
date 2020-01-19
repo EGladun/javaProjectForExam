@@ -1,4 +1,11 @@
-
+<%@ page import="javax.xml.parsers.DocumentBuilderFactory" %>
+<%@ page import="javax.xml.parsers.DocumentBuilder" %>
+<%@ page import="org.w3c.dom.Document" %>
+<%@ page import="java.io.File" %>
+<%@ page import="org.w3c.dom.NodeList" %>
+<%@ page import="java.io.IOException" %>
+<%@ page import="org.xml.sax.SAXException" %>
+<%@ page import="javax.xml.parsers.ParserConfigurationException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <html lang="en">
@@ -23,7 +30,26 @@
         <li>Что здесь происходит?</li>
         <li>Ахахах</li>
         <li>Помогите</li>
+        <%
+            DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+            DocumentBuilder db = null;
+            Document doc = null;
+            try {
+                db = dbf.newDocumentBuilder();
+                doc = db.parse(new File("..\\document\\catalog.xml"));
+                NodeList ndListFile = doc.getElementsByTagName("CD");
+                NodeList f= doc.getElementsByTagName("TITLE");
+                for (int i=0;i<ndListFile.getLength(); i++){
+                    String name =f.item(i).getTextContent().trim();
+                    out.print("<li>" + name + "</li>\n");
+                }
+            } catch (IOException | SAXException | ParserConfigurationException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        %>
     </ul>
+
 </div>
 <footer></footer>
 </body>
