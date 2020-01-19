@@ -16,7 +16,7 @@
     <a id="uploadjsp" href="upload.jsp">UPLOAD</a>
     <a id="indexjsp" href="index.jsp">DOWNLOAD</a>
 </div>
-<form name="uploader" enctype="multipart/form-data" method="post" class="upload_form container" id="drop-area">
+<form action="upload" name="uploader" enctype="multipart/form-data" method="post" class="upload_form container" id="drop-area">
     <div class="example-1">
         <div class="form-group">
             <label class="label">

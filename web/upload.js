@@ -1,6 +1,6 @@
 var uform = document.querySelector('.upload_form')
 
-uform.addEventListener('change', function(event){
+uform.addEventListener('submit', function(event){
 
     function uploadFile(file) {
         let url = 'http://localhost:8080/'
@@ -22,4 +22,8 @@ uform.addEventListener('change', function(event){
     } else {
         console.log("Поддерживается только XML")
     }
+})
+
+uform.addEventListener('change', function(){
+    document.querySelector('.title').innerHTML = "Файл выбран"
 })
