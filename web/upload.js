@@ -15,7 +15,7 @@ uform.addEventListener('change', function(event){
       }
     
     event.preventDefault()
-    var file = document.querySelector('.file')
+    let file = document.querySelector('.file')
     //console.log(file.value.split('.').pop())
     if(file.value.split('.').pop() == "xml"){
         uploadFile(file)
