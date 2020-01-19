@@ -3,7 +3,7 @@ var uform = document.querySelector('.upload_form')
 uform.addEventListener('submit', function(event){
 
     function uploadFile(file) {
-        let url = 'http://localhost:10080/'
+        let url = 'http://localhost:8080/'
         let formData = new FormData()
         formData.append('file', file)
         fetch(url, {

@@ -17,7 +17,7 @@ import javax.servlet.http.Part;
 public class UploadFileServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    public static final String SAVE_DIRECTORY = "document";
+    public static final String SAVE_DIRECTORY = "C:\\Users\\monst\\IdeaProjects\\javaProjectForExam\\document";
 
     public UploadFileServlet() {
         super();
