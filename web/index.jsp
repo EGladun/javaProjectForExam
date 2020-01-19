@@ -14,6 +14,7 @@
         <a id="uploadjsp" href="upload.jsp">UPLOAD</a>
         <a id="indexjsp" href="index.jsp">DOWNLOAD</a>
     </div>
+    <br>
     <form action="download" method="get">
       <button class="download" type="submit">Скачать файл</button>
     </form>
@@ -49,6 +50,24 @@
         width: 100%;
         height: 30px;
         background-color: grey;
+    }
+
+    .download{
+        width: 150px;
+        height: 30px;
+        color: whitesmoke;
+        background-color: grey;
+        border: 1px solid grey;
+        border-radius: 15px;
+    }
+    
+    .download:hover{
+        width: 150px;
+        height: 30px;
+        color: whitesmoke;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 15px;
     }
     
     .navbar{
@@ -121,6 +140,8 @@
     
     ul.content{
         width: 600px;
+        height: auto;
+        min-height: 80%;
     }
     
     .content>li:hover{
