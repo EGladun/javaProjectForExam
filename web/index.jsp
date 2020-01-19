@@ -121,6 +121,8 @@
     
     ul.content{
         width: 600px;
+        height: auto;
+        min-height: 80%;
     }
     
     .content>li:hover{

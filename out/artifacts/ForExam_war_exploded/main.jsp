@@ -25,6 +25,7 @@
         <li>Помогите</li>
     </ul>
 </div>
+<footer></footer>
 </body>
 <script src="main.js"></script>
 <style>
@@ -131,11 +132,20 @@
     
     ul.content{
         width: 600px;
+        height: auto;
     }
     
     .content>li:hover{
         color: black;
         font-size: 25px;
+    }
+
+    footer{
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        background-color: grey;
     }
 </style>
 </html>
