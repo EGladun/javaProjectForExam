@@ -1,7 +1,6 @@
 var uform = document.querySelector('.upload_form')
 
 uform.addEventListener('submit', function(event){
-
     function uploadFile(file) {
         let url = 'http://localhost:8080/'
         let formData = new FormData()
@@ -10,7 +9,7 @@ uform.addEventListener('submit', function(event){
           method: 'POST',
           body: formData
         })
-        .then(() => { console.log("Файл отправлен") })
+        .then(() => { console.log(formData) })
         .catch(() => { console.log("Файл НЕ отправлен") })
       }
     

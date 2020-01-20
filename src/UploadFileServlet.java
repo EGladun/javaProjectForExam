@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 @WebServlet("/upload")
-@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
+@MultipartConfig(
         maxFileSize = 1024 * 1024 * 10, // 10MB
         maxRequestSize = 1024 * 1024 * 50) // 50MB
 public class UploadFileServlet extends HttpServlet {
@@ -27,7 +27,7 @@ public class UploadFileServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("../web/upload.jsp");
+        RequestDispatcher dispatcher = request.getServletContext().getRequestDispatcher("C:\\Users\\monst\\IdeaProjects\\javaProjectForExam\\web\\upload.jsp");
 
         dispatcher.forward(request, response);
     }
@@ -68,7 +68,7 @@ public class UploadFileServlet extends HttpServlet {
                 }
             }
             // Upload successfully!.
-            response.sendRedirect(request.getContextPath() + "/uploadFileResults");
+            response.sendRedirect(request.getContextPath() + "/upload");
         } catch (Exception e) {
             e.printStackTrace();
             request.setAttribute("errorMessage", "Error: " + e.getMessage());

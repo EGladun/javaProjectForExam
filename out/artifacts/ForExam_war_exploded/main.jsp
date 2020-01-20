@@ -25,28 +25,21 @@
 </div>
 <div class="container">
     <ul class="content">
-        <li>Какая-то дичь</li>
-        <li>Не, ну рили</li>
-        <li>Что здесь происходит?</li>
-        <li>Ахахах</li>
-        <li>Помогите</li>
         <%
+
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = null;
             Document doc = null;
-            try {
-                db = dbf.newDocumentBuilder();
-                doc = db.parse(new File("..\\document\\catalog.xml"));
-                NodeList ndListFile = doc.getElementsByTagName("CD");
-                NodeList f= doc.getElementsByTagName("TITLE");
-                for (int i=0;i<ndListFile.getLength(); i++){
-                    String name =f.item(i).getTextContent().trim();
-                    out.print("<li>" + name + "</li>\n");
-                }
-            } catch (IOException | SAXException | ParserConfigurationException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+            db = dbf.newDocumentBuilder();
+            doc = db.parse(new File("C:\\Users\\monst\\IdeaProjects\\javaProjectForExam\\document\\catalog.xml"));
+            NodeList ndListFile = doc.getElementsByTagName("CD");
+            NodeList f= doc.getElementsByTagName("TITLE");
+            for(int i=0;i<ndListFile.getLength();i++){
+                String name =f.item(i).getTextContent().trim();
+                out.print("<li>" + name + "</li>\n");
             }
+
+
         %>
     </ul>
 
@@ -154,6 +147,7 @@
         color: grey;
         list-style-type: decimal;
         font-size: 20px;
+        height: 25px;
     }
     
     ul.content{

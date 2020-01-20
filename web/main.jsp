@@ -147,6 +147,7 @@
         color: grey;
         list-style-type: decimal;
         font-size: 20px;
+        height: 25px;
     }
     
     ul.content{
